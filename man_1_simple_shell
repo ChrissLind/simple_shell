@@ -1,0 +1,26 @@
+.TH "APRIL 13 2022" "man_1_simple_shell"
+
+.SH NAME
+
+simple_shell
+
+.SH Introduction
+.PP
+This simple shell is part of the final project of the first trimester
+at Holberton School. 
+This shell is a simple and shorter version of the real shell where 
+the user can interact in interactive mode and none interactive.
+
+.SH SYNOPSIS
+.B simple_shell foramt "[option] [command_string | argumment]"
+
+.SH DESCRIPTION
+.PP
+
+This shell is a simple UNIX command program that interprets,
+reads commands, and executes them.
+When running the shell in interactive mode the prompt ($) sing will
+show up and can start to write commands.
+And for exiting the shell write 'exit' or hit Ctrl + C to close the shell.
+
+
