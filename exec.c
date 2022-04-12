@@ -23,6 +23,7 @@ int _exec(char *string, char **command, char **envp)
 			exit(EXIT_FAILURE);
 		}
 	}
+
 	if (pid > 0)
 	{
 		_free_double(command);

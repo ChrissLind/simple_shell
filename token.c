@@ -28,7 +28,7 @@ char **_tokenizer(char *string, char *delim)
 	while (tokens[i] != NULL)
 	{
 		i++;
-		tokens = realloc(tokens, (i + 1) * sizeof(tokens));
+		tokens = realloc(tokens, (i + 2) * sizeof(tokens));
 		if (tokens == NULL)
 		{
 			_free_double(tokens);
@@ -36,5 +36,6 @@ char **_tokenizer(char *string, char *delim)
 		}
 		tokens[i] = strtok(NULL, delim);
 	}
+	tokens[i + 1] = store;
 	return (tokens);
 }

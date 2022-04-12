@@ -8,10 +8,17 @@
  */
 int _free_double(char **token)
 {
+	int i;
+
 	if (token != NULL)
 	{
-		free(token[0]);
-		token[0] = NULL;
+		i = 0;
+		while (token[i] != NULL)
+		{
+			i++;
+		}
+		free(token[i + 1]);
+		token[i + 1] = NULL;
 		free(token);
 		token = NULL;
 	}
