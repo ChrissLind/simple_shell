@@ -1,5 +1,12 @@
 #include "shell.h"
 
+/**
+ * _getpath - Gets the path to check commands through.
+ * @name: Name of the path.
+ * @envp: Environment variable.
+ *
+ * Return: Path or NULL.
+ */
 char *_getpath(char *envp[], char *name)
 {
 	char **buffer, *path;

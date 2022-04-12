@@ -1,5 +1,13 @@
 #include "shell.h"
 
+/**
+ * _exec - Runs the exec command.
+ * @string: The string being passed.
+ * @command: The command being entered.
+ * @envp: Environment.
+ *
+ * Return: 0
+ */
 int _exec(char *string, char **command, char **envp)
 {
 	pid_t pid;
@@ -11,8 +19,6 @@ int _exec(char *string, char **command, char **envp)
 		if (execve(string, command, envp))
 		{
 			_free_double(command);
-			//free(string);
-			//string = NULL;
 			perror("execve");
 			exit(EXIT_FAILURE);
 		}

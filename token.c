@@ -1,5 +1,12 @@
 #include "shell.h"
 
+/**
+ * _tokenizer - Function that runs strtok through a string.
+ * @string: String being passed.
+ * @delim: The delimiter character(s) that we are giving strtok.
+ *
+ * Return: The tokens made.
+ */
 char **_tokenizer(char *string, char *delim)
 {
 	char **tokens;
@@ -18,7 +25,7 @@ char **_tokenizer(char *string, char *delim)
 		return (NULL);
 	}
 	tokens[i] = strtok(store, delim);
-	while (tokens [i] != NULL)
+	while (tokens[i] != NULL)
 	{
 		i++;
 		tokens = realloc(tokens, (i + 1) * sizeof(tokens));
@@ -28,6 +35,6 @@ char **_tokenizer(char *string, char *delim)
 			return (NULL);
 		}
 		tokens[i] = strtok(NULL, delim);
-	}	
+	}
 	return (tokens);
 }

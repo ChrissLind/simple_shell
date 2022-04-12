@@ -1,6 +1,13 @@
 #include "shell.h"
 
-char *_dirmatch(char* path, char* input)
+/**
+ * _dirmatch - Matches directory.
+ * @path: The path.
+ * @input: Input.
+ *
+ * Return: 0
+ */
+char *_dirmatch(char *path, char *input)
 {
 	char **dir;
 	char *command, *temp, storage[300], slash[77] = "/";
