@@ -14,6 +14,11 @@ int _exec(char *string, char **command, char **envp)
 	int status;
 
 	pid = fork();
+	if (pid < 0)
+	{
+		perror("execve");
+		exit(-1);
+	}
 	if (pid == 0)
 	{
 		if (execve(string, command, envp))
