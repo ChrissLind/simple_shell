@@ -25,6 +25,12 @@ int main(unused int argc, unused char *argv[], char *envp[])
 			free(lineptr);
 			break;
 		}
+		if (_verifier(lineptr) == 0)
+		{
+			free(lineptr);
+			lineptr = NULL;
+			continue;
+		}
 		if (lineptr[0] == '\n')
 		{
 			continue;

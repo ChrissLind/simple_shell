@@ -27,5 +27,6 @@ int _printenv(char *envp[]);
 int _free_double(char **token);
 int _exec(char *string, char **command, char **envp);
 int _putchar(char c);
+int _verifier(char *string);
 
 #endif
