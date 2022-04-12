@@ -17,8 +17,7 @@ executes recieved commands in that order.
 
 Example:
 ` echo "echo 'hello'" | ./simp
-'hello'
-$`
+'hello'`
 
 # simp - Builtin commands
 
