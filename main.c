@@ -25,6 +25,10 @@ int main(unused int argc, unused char *argv[], char *envp[])
 			free(lineptr);
 			break;
 		}
+		if (lineptr[0] == '\n')
+		{
+			continue;
+		}
 		if (_strcmp(lineptr, "exit\n") == 0)
 		{
 			free(lineptr);
