@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * _verifier - Function that checks for 
+ * _verifier - Function that checks for
  *
  * @string: String being passed.
  *
