@@ -1,3 +1,4 @@
+![Holberton School Logo](https://techcrunch.com/wp-content/uploads/2015/11/holberton-logo-horizontal.jpg?w=764)
 # **simp** - simple_shell
 A simple UNIX command interpreter, written as part of a low-level programming project for Holberton School.
 
@@ -41,5 +42,3 @@ Xavier Perez<>
 **simp** emulates basic functionality of the **sh** shell.
 
 This project was written as a part of the curriculum for Holberton School. Holberton School is campus-based full-stack software engineering program that prepares students for careers in programming and the tech industy using project based peer learning methods. For more information, visit this link.
-
-![Holberton School Logo](https://techcrunch.com/wp-content/uploads/2015/11/holberton-logo-horizontal.jpg?w=764)
