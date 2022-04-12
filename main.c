@@ -17,9 +17,15 @@ int main(unused int argc, unused char *argv[], char *envp[])
 
 	while (1)
 	{
-		write(1, "$ ", 2);
+		if (isatty(0))
+		{
+			write(1, "$ ", 2);
+		}
 		if (getline(&lineptr, &n, stdin) == -1)
+		{
+			free(lineptr);
 			break;
+		}
 		if (_strcmp(lineptr, "exit\n") == 0)
 		{
 			free(lineptr);
