@@ -9,7 +9,7 @@
  */
 int _verifier(char *string)
 {
-	int i, flag;
+	int i;
 
 	for (i = 0; i < _strlen(string); i++)
 	{
@@ -17,9 +17,8 @@ int _verifier(char *string)
 			;
 		else
 		{
-			flag = 1;
-			break;
+			return (1);
 		}
 	}
-	return (flag);
+	return (0);
 }

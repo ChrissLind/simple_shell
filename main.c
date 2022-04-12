@@ -31,10 +31,6 @@ int main(unused int argc, unused char *argv[], char *envp[])
 			lineptr = NULL;
 			continue;
 		}
-		if (lineptr[0] == '\n')
-		{
-			continue;
-		}
 		if (_strcmp(lineptr, "exit\n") == 0)
 		{
 			free(lineptr);
