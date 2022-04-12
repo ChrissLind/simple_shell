@@ -11,9 +11,8 @@
  */
 int main(unused int argc, unused char *argv[], char *envp[])
 {
-	char **command, *tok, *lineptr = NULL, *path = NULL, *string = NULL;
+	char **command, *lineptr = NULL, *path = NULL, *string = NULL;
 	size_t n;
-	int status, count = 0;
 
 	while (1)
 	{
@@ -29,7 +28,7 @@ int main(unused int argc, unused char *argv[], char *envp[])
 		if (_strcmp(lineptr, "exit\n") == 0)
 		{
 			free(lineptr);
-			exit(status);
+			exit(0);
 		}
 		else
 		{

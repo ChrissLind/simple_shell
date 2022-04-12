@@ -12,12 +12,11 @@ char *_dirmatch(char *path, char *input)
 	char **dir;
 	char *command, *temp, storage[300], slash[77] = "/";
 	int i;
+	struct stat info;
 
 	dir = _tokenizer(path, ":");
 
 	temp = _strcat(slash, input);
-
-	struct stat info;
 
 	for (i = 0; dir[i] != NULL; i++)
 	{

@@ -11,7 +11,6 @@ char *_getpath(char *envp[], char *name)
 {
 	char **buffer, *path;
 	int i;
-	int status;
 
 	for (i = 0; envp[i] != NULL; i++)
 	{
