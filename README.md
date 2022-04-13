@@ -9,12 +9,15 @@ This is a simple UNIX command language interpreter that reads commands from eith
 ./simp
 to invoke **simp**, you compile all your .c files in the repository with gcc and the flags "-Wall -Werror -Wextra -pedantic -std=gnu89"
 and run the following executable:
+`$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o simp
+$ ./simp`
 
 **simp** can be invoked both interactively and non-interactively. If simp is invoked with standard input not connected to a terminal, it reads and 
 executes recieved commands in that order.
 
 Example:
-
+` echo "echo 'hello'" | ./simp
+'hello'`
 
 # simp - Builtin commands
 
