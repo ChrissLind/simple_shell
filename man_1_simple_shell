@@ -12,6 +12,12 @@ This shell is a simple and shorter version of the real shell where
 the user can interact in interactive mode and none interactive.
 
 .SH SYNOPSIS
+.B ./<NAME OF EXECUTABLE>
+
+Compiled using: gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o <name of executable>
+
+.SH When using shell
+
 .B simple_shell foramt "[option] [command_string | argumment]"
 
 .SH DESCRIPTION
@@ -24,3 +30,25 @@ show up and can start to write commands.
 And for exiting the shell write 'exit' or hit Ctrl + C to close the shell.
 
 
+.SH Process
+.PP
+
+When writing inside the terminal for example 'ls', the shell takes that arguments,
+reads the string.
+Then the strings gets tokenized using the " " as the delimiter and validates the arguments if it
+matched with the PATH file and will execute the command with the new line and the prompt '$'
+will show again with an empty line ready to write more commands.
+But if some error ocured it will show up an error message and it will not execute the
+command.
+
+.SS PATH 
+.PP
+Inside the env theres a environment called PATH with a long directories list.
+In that directory when the user writes the command, the shell starts to look inside of those
+files for a match to execute, but if it does not find a match it will show up an error.
+
+.SH Authors
+
+Chris Lind
+
+Xavier Perez Cabrera
